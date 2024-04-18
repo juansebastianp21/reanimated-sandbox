@@ -15,7 +15,7 @@ const App = () => {
     // fetch contacts from  jason place holder
     const response = await fetch("https://jsonplaceholder.typicode.com/users");
     const data = await response.json();
-    // wait for 2000ms to simulate loading
+    //wait for 2000ms to simulate loading
     await new Promise((resolve) => setTimeout(resolve, 2000));
     setContacts(data);
   }, []);
